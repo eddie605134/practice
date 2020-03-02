@@ -11,10 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('front/index');
+Route::get('/', 'FrontController@index')->name('index');
+
+Route::get('/news', 'FrontController@news')->name('news');
+
+Auth::routes();
+
+Route::group(['middleware' => ['auth'],'prefix'=>'/home'], function () {
+
+    Route::get('/', 'HomeController@index')->name('home');
+
+    Route::get('/news', 'NewsController@index')->name('news');
+
+    Route::post('/news/store', 'NewsController@store')->name('news');
+
 });
 
-Route::get('/news', function () {
-    return view('front/news');
-});
+

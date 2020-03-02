@@ -68,9 +68,9 @@
                 </li>
             </ul>
             <div class="navbar-buttons mbr-section-btn">
-                <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">
+                <a class="btn btn-sm btn-primary display-4" href="/home">
                     <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
-                    Try It Now!
+                    LOGIN
                 </a>
             </div>
         </div>
