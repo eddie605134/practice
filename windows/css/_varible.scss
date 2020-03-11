@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+}
+
+.mid{
+    align-items: center;
+}
+
+.pc{
+    display: none;
+}
+
+@media (max-width:1400px){
+    .x,.y{
+        display: none;
+    }
+}
+
+@media (max-width:860px){
+    .pc{
+        display: inline-block;
+    }
+
+}

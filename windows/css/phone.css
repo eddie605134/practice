@@ -1,0 +1,65 @@
+@media (max-width:540px){
+
+    .navbar,.b-cont,.sectionarea,.content-top,.footer{
+        min-width: 500px;
+    }
+
+
+    .content-top{
+        padding: 0 0;
+    }
+
+    /* .baner{
+        margin-bottom: 30px;
+    } */
+
+    .tbflw{
+        margin-top: -5px;
+    }
+
+    .baner img{
+        height: 50vw;
+    }
+
+    .pear{
+        margin-bottom: 0;
+    }
+
+    
+
+  
+    /* ~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~ */
+
+   
+
+    
+    
+    
+    .car33{
+        width: unset;
+
+    }
+    .car34{
+        width: unset;
+    }
+    
+    .ft-car{
+        
+        flex:none;
+    }
+
+    .ft-car h2{
+        padding-left: 30px;
+    }
+
+    .ft-car ul{
+        
+        display: inline-block;
+        padding-left: 30px;
+    }
+    
+    .ft-car li{
+        
+        padding-left: 0;
+    }
+}

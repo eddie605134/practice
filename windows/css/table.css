@@ -1,0 +1,117 @@
+@media (max-width:1083px){
+
+    .baner{
+        margin-bottom: -10px;
+    }
+
+    .tbflw{
+        width: 100%;
+        height: 30VW;
+        background-color:#e6e6e6 ;
+        flex-direction: column;
+        
+
+        
+    }
+
+    .tbflw-1,.tbflw-2,.tbflw-3{
+        display: block;
+        
+    }
+
+    .tbflw-1{
+        margin: auto;
+        font-size: 40px;
+    }
+
+    .tbflw-2{
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .tbflw-3{
+        margin: auto;
+        display: inline-block;
+        padding: 3px 10px;
+        background-color: black;
+        color: cornsilk;
+        font-size: 30px;
+    }
+
+    .apple::before{
+        /* white-space: pre;
+           content: "/A "   <----- 可在CSS裡煥行*/
+        content: unset;
+        font-size: 40px;
+        position: absolute;
+        left: 10%;
+        bottom: 50%;
+    }
+    
+    .banana::after{
+        content: unset;
+        font-size: 20px;
+        position: absolute;
+        left: 10%;
+        bottom: 40%;
+    }
+    
+    
+    .pear::before{
+        content: unset;
+        display: inline-block;
+        padding: 3px 10px;
+        background-color: black;
+        color: cornsilk;
+        font-size: 30px;
+        position: absolute;
+        left: 10%;
+        bottom: 25%;
+        
+    }
+    
+    .content-top{
+        padding: 0 0;
+    }
+    
+    .section-top{
+        transform: translateX(0px);
+        flex-wrap:wrap ;
+    }
+
+    .section{
+        width: 50%;
+        flex-wrap:wrap ;
+    }
+
+/* ~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~ */
+
+    .footer{
+        width: 100%;
+        background-color: rgb(240, 240, 240) ;
+        padding: 0 5%;
+    }
+    
+    .ftcarg{
+        flex-wrap: wrap;
+    }
+    
+    .ft-car{
+        flex:none;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .car33{
+        width: 33%;
+
+    }
+    .car34{
+        width: 34%;
+    }
+    
+    .ft-car li{
+        padding-left: 0;
+    }
+
+}

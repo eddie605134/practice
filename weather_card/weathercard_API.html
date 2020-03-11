@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color:antiquewhite;
+            width: 100%;
+            height: 100vh;
+            
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            background-color: antiquewhite;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+          
+        }
+
+        .card{
+            text-align: center;
+            background-color: bisque;
+            width: 250px;
+            padding: 20px;
+            margin: 10px ;
+            border: 1px solid goldenrod;
+            border-radius: 10px;
+            box-shadow: 4px 4px 1px gray;
+        }
+
+        h1{
+            margin: 0;
+            font-size: 40px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .mt{
+            margin-bottom:20px ;
+        }
+
+        .time{
+            width: 400px;
+            padding: 10px 0;    
+            background-color: antiquewhite;
+            font-size: 30px;
+            margin:auto;
+        }
+
+
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="time"></div>
+    <div class="container">
+        
+        <!-- <div class="currentdate"></div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-cartoon-hand-painted-fine-sun-png-image_3781681.jpg" alt=""></div>
+            <div class="card_contain">
+                <h1>台中市</h1>
+                <h2>晴天</h2>
+                <div class="">
+                    <span>最高溫:34&ordm;C</span>
+                    <span>最低溫:23&ordm;C</span>
+                </div>
+                <div class="mt">台天炎熱，出門注意防曬</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img">
+                <img src="https://lh3.googleusercontent.com/proxy/9ejbuho0fs-JwBU90uffEIKHaNEKdbEhJBEyNF1BXLmDwoHsbvwz5ouEEFcBHkyft4gr6w5n6lTc6ErzNFdjlJhz5bcAu1j5qrtuyy8HsA0">
+                <h1>台中市</h1>
+                <h2>多雲時晴</h2>
+                <div class="">
+                    <span>最高溫:30度C</span>
+                    <span>最低溫:22度C</span>
+                </div>
+                <div class="mt">天氣悶熱，注意補中水分</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img">
+                <img src="https://bpic.588ku.com//original_origin_min_pic/19/02/20/8dcdfd54ffe4dec40f45a6aa4087dbe3.jpg" alt=""></div>
+            <div class="card_contain">
+                <h1>台中市</h1>
+                <h2>雨天</h2>
+                <div class="">
+                    <span>最高溫:24度C</span>
+                    <span>最低溫:16度C</span>
+                </div>
+                <div class="mt">微冷，出門要多加衣物</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img">
+                <img src="https://clipartmag.com/images/thunderstorms-clipart-46.jpg" alt=""></div>
+            <div class="card_contain">
+                <h1>台中市</h1>
+                <h2>雷陣雨</h2>
+                <div class="">
+                    <span>最高溫:29度C</span>
+                    <span>最低溫:19度C</span>
+                </div>
+                <div class="mt">嚴防午後雷雨，出門記得攜帶雨具</div>
+            </div>
+        </div> -->
+    </div>     
+
+
+
+
+
+<script>
+    fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-E9B76176-BE97-482F-964D-73AB54604A82')
+        .then(function(respoone){
+            return respoone.json();
+        })
+        .then(function(weather){
+            console.log(weather);
+            var locations = weather.records.location
+            console.log(locations)
+
+            locations.forEach(Location => {
+                var location_name = Location.locationName
+                // console.log(location_name)
+
+                var location_wx = Location.weatherElement[0].time[0].parameter.parameterName
+                // console.log(location_wx)
+
+                var high_t = Location.weatherElement[4].time[0].parameter.parameterName
+                // console.log(high_t)
+
+                var low_t =  Location.weatherElement[2].time[0].parameter.parameterName
+
+                
+
+                var wx_code = Location.weatherElement[0].time[0].parameter.parameterValue
+                
+
+
+                if(wx_code == 1){
+                    var weather_icon = "https://png.pngtree.com/png-clipart/20190520/original/pngtree-cartoon-hand-painted-fine-sun-png-image_3781681.jpg"
+                }else if(wx_code == 2 || wx_code == 3 ||wx_code == 4){
+                    weather_icon = "https://lh3.googleusercontent.com/proxy/9ejbuho0fs-JwBU90uffEIKHaNEKdbEhJBEyNF1BXLmDwoHsbvwz5ouEEFcBHkyft4gr6w5n6lTc6ErzNFdjlJhz5bcAu1j5qrtuyy8HsA0"
+                }else if(wx_code == 8 || wx_code == 9 ||wx_code == 10 ||wx_code == 11 ||wx_code == 12 ||wx_code == 13 ||wx_code == 14){
+                    weather_icon = "https://bpic.588ku.com//original_origin_min_pic/19/02/20/8dcdfd54ffe4dec40f45a6aa4087dbe3.jpg"
+                }else if(wx_code == 15 || wx_code == 16 ||wx_code == 17 ||wx_code == 18 ||wx_code == 19 ||wx_code == 20 ||wx_code == 21){
+                    weather_icon ="https://clipartmag.com/images/thunderstorms-clipart-46.jpg"
+                }else{
+                    weather_icon ="https://img.lovepik.com/free_png/32/45/17/40758PICcpEJ2F7xudF83_PIC2018.png_860.png"
+                }
+
+                var container = document.querySelector('.container')
+                container.innerHTML += `
+                <div class="card">
+            <div class="card_img">
+                <img src="${weather_icon}" alt=""></div>
+            <div class="card_contain">
+                <h1>${location_name}</h1>
+                <h2>${location_wx}</h2>
+                <div class="">
+                    <span>最高溫:${high_t}&ordm;C</span>
+                    <span>最低溫:${low_t}&ordm;C</span>
+                </div>
+                <div class="mt">台天炎熱，出門注意防曬</div>
+            </div>
+            </div>`
+
+
+           
+
+
+
+
+
+            });
+
+            var today = new Date()
+
+          var current_day = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" +today.getDate() + "日";
+          var current_time = today.getHours() + ":" + today.getMinutes();
+
+          var nowtime = document.querySelector('.time')
+          nowtime.innerHTML += "現在時間" + current_day +current_time
+
+            
+
+        });
+
+        
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
