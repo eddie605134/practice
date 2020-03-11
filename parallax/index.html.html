@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('img2/rain1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        a{
+            color: lightyellow;
+        }
+
+        .mbtn:hover{
+            background-color: mediumslateblue;
+            font-size: 130%;
+        }
+
+        
+
+        #all{
+            background-color: bisque;
+            width: 80%;
+            height: 300vh;
+            margin: auto;
+           
+            
+        }
+
+        #navbar{
+            width: 80%;
+            padding: 10px 15px;
+            position: fixed;
+            left: 10%;
+        }
+
+        #avator{
+            width: 150px;
+            height: 150px;
+            background-image: url('img2/cat.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 75px;
+            border: 3px solid aqua;
+            box-shadow: 5px 10px 15px gold;
+            float: left;
+
+        }
+
+        .menu{
+            position: absolute;
+            right: 15px;
+            top: 75px;
+            height: 50px;
+        }
+
+        .mbtn{
+            padding: 0 10px;
+            line-height: 50px;
+            height: 50px;
+            background-color: lightblue;
+            margin-left: 10px;
+            float: left;
+            transition: 0.5s;
+        }
+
+        #backarea1{
+            background-image: url('img2/rain2.jpg');
+            
+            
+            
+        }
+
+        #backarea2{
+            background-image: url('img2/rain3.jpg');
+        }
+
+        #backarea3{
+            background-image: url('img2/rain4.jpg');
+        }
+
+        .bastyle{
+            width: 100%;
+            height: 100vh;
+            padding-top: 50vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+
+        .mstyle{
+            background-color: rgba(0, 0, 0, 0.459);
+            width: 100%;
+            height: 50vh;
+            padding-top: calc(25vh - 50px);
+            transition: 2s;
+            
+        }
+        .mstyle:hover{
+            background-color: rgba(255, 248, 220, 0.24);
+     }
+
+
+        .btstyle{
+            background-color: rgb(26, 200, 206);
+            height: 100px;
+            width: 200px;
+            margin: auto;
+            transition: 0.6s;
+        }
+
+        .btstyle:hover{
+            background-color: rgba(17, 17, 114, 0);
+        }
+        
+            
+        
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="navbar">
+            <div id="avator"></div>
+            <div id="menu" class="menu">
+                <div id="s1" class="mbtn"><a href="#backarea1">市區</a></div>
+                <div id="s2" class="mbtn"><a href="#backarea2">郊區</a></div>
+                <div id="s3" class="mbtn"><a href="#backarea3">夜晚</a></div>
+            </div>
+
+        </div>
+        <div id="backarea1" class="bastyle">
+           
+            <div id="list"></div>
+            <div id="mask1" class="mstyle">
+                <div id="button1" class="btstyle"></div>
+            </div>
+        </div>
+
+        <div id="backarea2" class="bastyle">
+            <div id="mask2" class="mstyle">
+                <div id="button2" class="btstyle"></div>
+            </div>
+        </div>
+
+        <div id="backarea3" class="bastyle">
+            <div id="mask3" class="mstyle">
+                <div id="button3" class="btstyle"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
