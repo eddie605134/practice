@@ -1,0 +1,122 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .header10 {
+  position: relative;
+  background-color: #f7ed4a54;
+}
+
+body .header10 .bannersw {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  padding-top: 96px;
+}
+
+body .header10 .bannersw .ssi {
+  width: 100%;
+  max-height: 667px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .header10 .bannersw .ssi img {
+  height: 100%;
+}
+
+body .header10 .fly-earth {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  z-index: 99;
+}
+
+body .header10 .fly-earth img {
+  width: 100%;
+}
+
+body .header10 .rearea {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  z-index: 99;
+}
+
+@media (max-width: 1070px) {
+  body .header10 .rearea {
+    width: 100%;
+  }
+}
+
+body .header10 .rearea .bannertext {
+  color: #7d4136;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 1323px) {
+  body .header10 .rearea .bannertext {
+    position: absolute;
+    bottom: -250px;
+    right: 300px;
+  }
+}
+
+@media (max-width: 930px) {
+  body .header10 .rearea .bannertext {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .header10 .rearea .bannertext .psarea {
+  width: 100%;
+}
+
+body .header10 .rearea .bannertext .psarea h1 {
+  font-size: 80px;
+  font-weight: 1000;
+}
+
+@media (max-width: 1323px) {
+  body .header10 .rearea .bannertext .psarea h1 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1062px) {
+  body .header10 .rearea .bannertext .psarea h1 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1062px) {
+  body .header10 .rearea .bannertext .psarea h1 {
+    font-size: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
