@@ -142,6 +142,7 @@
             console.log(locations)
 
             locations.forEach(Location => {
+                
                 var location_name = Location.locationName
                 // console.log(location_name)
 
@@ -160,11 +161,11 @@
 
 
                 if(wx_code == 1){
-                    var weather_icon = "https://png.pngtree.com/png-clipart/20190520/original/pngtree-cartoon-hand-painted-fine-sun-png-image_3781681.jpg"
-                }else if(wx_code == 2 || wx_code == 3 ||wx_code == 4){
-                    weather_icon = "https://lh3.googleusercontent.com/proxy/9ejbuho0fs-JwBU90uffEIKHaNEKdbEhJBEyNF1BXLmDwoHsbvwz5ouEEFcBHkyft4gr6w5n6lTc6ErzNFdjlJhz5bcAu1j5qrtuyy8HsA0"
+                    var weather_icon = "https://png.pngtree.com/png-clipart/20190520/original/pngtree-cartoon-hand-painted-fine-sun-png-image_3781681.jpg"//晴天
+                }else if(wx_code == 2 || wx_code == 3 ||wx_code == 4||wx_code == 5||wx_code == 6||wx_code == 7){//多雲到晴
+                    weather_icon = "https://lh3.googleusercontent.com/proxy/vwZw_GId-pm4c-p6tAUqGAylckmeNPzkWNbEwsAWNdOZ2-A0hF_gZJBjyopHFAaL2Sn-kibyFXEW4dohk3g6q4K6w0JQD72jd8LUADxr4Ahi5Q"
                 }else if(wx_code == 8 || wx_code == 9 ||wx_code == 10 ||wx_code == 11 ||wx_code == 12 ||wx_code == 13 ||wx_code == 14){
-                    weather_icon = "https://bpic.588ku.com//original_origin_min_pic/19/02/20/8dcdfd54ffe4dec40f45a6aa4087dbe3.jpg"
+                    weather_icon = "https://static.rti.org.tw/assets/thumbnails/2019/07/01/20190701000147M.jpg"
                 }else if(wx_code == 15 || wx_code == 16 ||wx_code == 17 ||wx_code == 18 ||wx_code == 19 ||wx_code == 20 ||wx_code == 21){
                     weather_icon ="https://clipartmag.com/images/thunderstorms-clipart-46.jpg"
                 }else{
