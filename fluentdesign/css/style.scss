@@ -213,6 +213,25 @@ main {
         border-color: initial;
         border-image: initial;
 
+        &:hover>.top-bar {
+             transform: rotate(45deg);
+             top: 24px;
+        }
+
+        &:hover>.middle-bar {
+            display: none;
+        }
+
+        &:hover>.bottom-bar {
+            top: 24px;
+            transform: rotate(135deg);
+           
+        }
+
+
+
+
+
         @media (max-width:767px) {
             display: flex;
 
@@ -226,24 +245,32 @@ main {
             transition: all 200ms linear 0ms;
 
 
+
+
         }
 
         .top-bar {
             top: 17px;
             left: 12px;
             transform: rotate(0deg);
+
+
         }
 
         .middle-bar {
             top: 24px;
             left: 12px;
             opacity: 1;
+
+
         }
 
         .bottom-bar {
             top: 31px;
             left: 12px;
             transform: rotate(0deg);
+
+
         }
 
     }
@@ -1463,75 +1490,75 @@ main {
             }
         }
 
-            .space-bar {
-                opacity: 1;
-                // transform: translateY(0px);
-                position: absolute;
+        .space-bar {
+            opacity: 1;
+            // transform: translateY(0px);
+            position: absolute;
+            top: 40vh;
+            left: 65px;
+
+            @media (max-width: 1460px) {
                 top: 40vh;
                 left: 65px;
-
-                @media (max-width: 1460px) {
-                    top: 40vh;
-                    left: 65px;
-                }
-
-                @media (max-width: 500px) {
-                    display: none;
-                }
             }
 
-            .space-knife {
-                opacity: 1;
-                // transform: translateY(0px);
-                position: absolute;
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+
+        .space-knife {
+            opacity: 1;
+            // transform: translateY(0px);
+            position: absolute;
+            top: 80px;
+            left: auto;
+            right: 160px;
+
+            @media (max-width: 1460px) {
                 top: 80px;
                 left: auto;
-                right: 160px;
-
-                @media (max-width: 1460px) {
-                    top: 80px;
-                    left: auto;
-                    right: 60px;
-                }
-
-                @media (max-width: 500px) {
-                    display: none;
-                }
-
+                right: 60px;
             }
 
-            .space-plane {
-                opacity: 1;
-                // transform: translateY(0px);
-                position: absolute;
-                top: 530px;
-                right: 185px;
-                pointer-events: none;
-
-                @media (max-width: 500px) {
-                    display: none;
-                }
+            @media (max-width: 500px) {
+                display: none;
             }
 
-            .space-purpleknife {
-                opacity: 1;
-                // transform: translateY(-100px);
-                position: absolute;
-                top: 380px;
-                right: 320px;
-                z-index: 99;
+        }
 
-                @media (max-width: 1460px) {
-                    top: 37px;
-                    right: 220px;
-                }
+        .space-plane {
+            opacity: 1;
+            // transform: translateY(0px);
+            position: absolute;
+            top: 530px;
+            right: 185px;
+            pointer-events: none;
 
-                @media (max-width: 767px) {
-                    display: none;
-                }
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+
+        .space-purpleknife {
+            opacity: 1;
+            // transform: translateY(-100px);
+            position: absolute;
+            top: 380px;
+            right: 320px;
+            z-index: 99;
+
+            @media (max-width: 1460px) {
+                top: 37px;
+                right: 220px;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
             }
         }
     }
+}
 
 
 .Ucard {

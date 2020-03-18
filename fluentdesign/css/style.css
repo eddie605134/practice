@@ -228,6 +228,22 @@ main {
      border-image: initial;
 }
 
+.hearderInner .MenuToggle:hover > .top-bar {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 24px;
+}
+
+.hearderInner .MenuToggle:hover > .middle-bar {
+  display: none;
+}
+
+.hearderInner .MenuToggle:hover > .bottom-bar {
+  top: 24px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
 @media (max-width: 767px) {
   .hearderInner .MenuToggle {
     display: -webkit-box;
