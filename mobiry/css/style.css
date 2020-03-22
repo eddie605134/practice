@@ -120,19 +120,34 @@ body .header10 .rearea .bannertext .psarea h1 {
   }
 }
 
+body .taichungpci {
+  background-image: url("https://i1.wp.com/img.journey.tw/20181008001513_18.jpg?resize=2000%2C1335&quality=100&ssl=1");
+}
+
+body .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.822);
+}
+
 body .taichungpco {
   background-image: url("https://i1.wp.com/img.journey.tw/20181008001513_18.jpg?resize=2000%2C1335&quality=100&ssl=1");
   background-position: center;
   background-size: cover;
 }
 
-body .taichungpco .taichungpci {
-  background-image: url("https://i1.wp.com/img.journey.tw/20181008001513_18.jpg?resize=2000%2C1335&quality=100&ssl=1");
+body .mbr-arrow {
+  position: relative;
+  margin-left: auto;
 }
 
-body .taichungpco .mask {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.822);
+body .mbr-arrow .myarrow {
+  position: absolute;
+  left: 23px;
+  top: -15px;
+}
+
+body .footertext {
+  margin-left: 40px;
 }
 /*# sourceMappingURL=style.css.map */

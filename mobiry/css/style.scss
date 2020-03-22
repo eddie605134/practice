@@ -1,11 +1,13 @@
 
 
-html{
+// 過廠
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    
+
     min-width: 320px;
     box-sizing: border-box;
 
@@ -35,15 +37,15 @@ body {
 
 
         }
-        
 
-        .fly-earth{
+
+        .fly-earth {
             position: absolute;
             bottom: -50px;
             right: -50px;
             z-index: 99;
 
-            img{
+            img {
                 width: 100%;
             }
         }
@@ -101,32 +103,53 @@ body {
         }
     }
 
-                                //banner end
+    //banner end
 
-    
-    .taichungpco{
+
+
+
+
+
+    .taichungpci {
+        background-image: url('https://i1.wp.com/img.journey.tw/20181008001513_18.jpg?resize=2000%2C1335&quality=100&ssl=1');
+
+    }
+
+    .mask {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.822);
+    }
+
+    .taichungpco {
         background-image: url('https://i1.wp.com/img.journey.tw/20181008001513_18.jpg?resize=2000%2C1335&quality=100&ssl=1');
         background-position: center;
         background-size: cover;
-        
-        
-        
-        .taichungpci{
-            background-image: url('https://i1.wp.com/img.journey.tw/20181008001513_18.jpg?resize=2000%2C1335&quality=100&ssl=1');
-                 
-        }
-        .mask{
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.822);
-        }
-
-       
-        
-        
     }
 
-    
+    .mbr-arrow {
+        position: relative;
+        margin-left:auto ;
+
+        .myarrow {
+            position: absolute;
+            left: 23px;
+            top: -15px;
+            
+        }
+    }
+
+    .footertext{
+        margin-left: 40px;
+    }
+
+
+
+
+
+
+
+
 
 
 
